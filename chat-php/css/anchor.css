@@ -1,0 +1,47 @@
+a {
+    text-decoration: none;
+    color: dodgerblue;
+    font-size: 1.6rem
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: deeppink;
+}
+
+#goBack {
+    /* position: relative;
+    left: 1rem;
+    top: 1rem; */
+}
+
+#msg-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 1rem;
+}
+
+#msgBody {
+    background: rgb(218, 186, 186);
+    border: 2px solid rgb(176, 130, 130);
+    border-radius: 5px;
+    padding: 6px 4px;
+    color: rgb(195, 31, 31);
+    caret-color: rgb(199, 29, 29);
+    font-size: 1rem;
+    margin-left: -15px;
+}
+
+#msgSendBtn {
+    background: rgb(216, 166, 166);
+    /* margin-bottom: 5px; */
+    border: 2px solid rgb(176, 130, 130);
+    border-radius: 5px;
+    padding: 6px 4px;
+    color: rgb(199, 29, 29);
+    caret-color: rgb(199, 29, 29);
+    font-size: 1rem;
+    margin-left: 4px;
+}

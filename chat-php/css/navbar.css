@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container {
+    margin-top: 0;
+    width: 100vw;
+    height: 3rem;
+    background: black;
+    position: relative;
+}
+
+.nav-items {
+    position: absolute;
+    top: 10px;
+    color: white;
+    right: 4rem;
+    /* margin: 0.4rem; */
+}
+
+a {
+    color: white;
+    margin: 7px 10px 3px 10px;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+#user-name {
+    position: absolute;
+    /* left: 10rem; */
+    /* margin-top: 5rem; */
+    top: 10px;
+    left: 1.1rem;
+}

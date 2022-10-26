@@ -1,0 +1,255 @@
+body {
+    background: #888;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 86vw;
+    height: 100vh;
+    border-radius: 6px;
+}
+
+.main-heading {
+    margin: 2px auto 3px auto;
+}
+
+.note-form {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+
+}
+
+#addNoteChat {
+    margin-top: 12px;
+    width: 80vw;
+    background: rgb(204, 36, 36);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 6px 8px;
+    border: 2px solid rgb(247, 110, 110);
+    border-radius: 6px;
+    text-align: center;
+    justify-content: center;
+    /* position: fixed;
+    bottom: 23px;
+    right: 28px; */
+}
+
+#noteAddFinalBtn,
+#noteCancelBtn {
+    margin-top: 4px;
+    /* width: 80vw; */
+    background: rgb(204, 36, 36);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 5px;
+    border: 2px solid rgb(247, 110, 110);
+    border-radius: 6px;
+}
+
+#addNoteChat:hover,
+#noteAddFinalBtn:hover {
+    background: rgb(173, 16, 16);
+    box-shadow: 2px 2px 2px 2px 2px rgb(89, 2, 2) inset;
+    color: white;
+    font-size: 1.1rem;
+}
+
+#noteCancelBtn {
+    width: 70vw !important;
+    background: gold;
+    color: black;
+}
+
+#noteCancelBtn:hover {
+    background: rgb(224, 190, 2);
+    color: black;
+    font-size: 1.1rem;
+}
+
+#noteAddFinalBtn {
+    width: 70vw !important;
+}
+
+#note {
+    background: rgb(216, 166, 166);
+    margin-bottom: 5px;
+    border: 2px solid rgb(176, 130, 130);
+    border-radius: 5px;
+    padding: 6px 4px;
+    color: rgb(199, 29, 29);
+    caret-color: rgb(199, 29, 29);
+    font-size: 1rem;
+    width: 70vw;
+}
+
+#note:focus {
+    outline-color: rgb(199, 29, 29);
+}
+
+#note::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    /* Firefox */
+}
+
+#list {
+    width: 90%;
+}
+
+.popupBtn {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 250px) {
+    #addNoteChat {
+        width: 70vw;
+    }
+
+    #note {
+        width: 64vw;
+    }
+}
+
+@media screen and (min-width: 350px) {
+    #addNoteChat {
+        width: 60vw;
+    }
+
+    #note {
+        width: 54vw;
+    }
+
+    #noteAddFinalBtn {
+        width: 56vw !important;
+    }
+
+    #noteCancelBtn {
+        width: 56vw !important;
+    }
+}
+
+@media screen and (min-width: 430px) {
+    #addNoteChat {
+        width: 50vw;
+        font-size: 1rem;
+    }
+
+    #note {
+        width: 44vw;
+        font-size: 0.9rem;
+    }
+
+    #noteAddFinalBtn {
+        width: 46vw !important;
+        font-size: 1rem;
+    }
+
+    #noteCancelBtn {
+        width: 46vw !important;
+    }
+
+    #addNoteChat:hover,
+    #noteAddFinalBtn:hover {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media screen and (min-width: 500px) {
+    #addNoteChat {
+        width: 40vw;
+        font-size: 1rem;
+    }
+
+    #note {
+        width: 40vw;
+        font-size: 0.9rem;
+    }
+
+    #noteAddFinalBtn {
+        width: 42vw !important;
+    }
+
+    #noteCancelBtn {
+        width: 42vw !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #addNoteChat {
+        width: 30vw;
+    }
+
+    #note {
+        width: 33vw;
+    }
+
+    #noteAddFinalBtn {
+        width: 34vw !important;
+    }
+
+    #noteCancelBtn {
+        width: 34vw !important;
+        margin-right: 4px;
+    }
+
+    .popupBtn {
+        width: 34vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+}
+
+#list {
+    list-style-type: circle;
+    font-size: 1.4rem;
+}
+
+/* #list li::before {
+    content: "\2022";
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+} */
+
+
+#msg-show {
+    list-style-type: none;
+}
+
+
+#logout {
+    color: rgb(237, 204, 18);
+}
+
+#logout:hover {
+    color: dodgerblue;
+}
